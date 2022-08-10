@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./stylesheet.css" rel="stylesheet">
-    <script src="./personalbudget.js"></script>
+    <title>Tutorial</title>
+    <link href="stylesheet.css" rel="stylesheet" defer>
 </head>
 <body>
     <h1>Budget Worksheet</h1>
     <table>
-        <tr>
+        <tr id="header_row">
             <th id="monthdatalist">
                 <form>
                     <label for="monthlist">Month</label>
@@ -38,1442 +37,300 @@
             <th>Vehicle&Gas</th>
             <th>Descretionary</th>
             <th>Income</th>
-            <th>Total</th>
+            <th>Balance Total</th>
         </tr>
-        <tr>
-            <td>Day 1</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent1">$</label>
-                    <input type="number" id="mortgage_rent1" name="mortgage_rent1">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie1">$</label>
-                    <input type="number" id="utilities1" name="utilities1">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries1">$</label>
-                    <input type="number" id="food_groceries1" name="food_groceries1">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas1">$</label>
-                    <input type="number" id="vehicle_gas1" name="vehicle_gas1">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary1">$</label>
-                    <input type="number" id="discretionary1" name="discretionary1">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income1">$</label>
-                    <input type="number" id="income1" name="income1">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total1">$</label>
-                    <input type="number" id="total1" name="total1">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 2</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent2">$</label>
-                    <input type="number" id="mortgage_rent2" name="mortgage_rent2">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie2">$</label>
-                    <input type="number" id="utilities2" name="utilities2">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries2">$</label>
-                    <input type="number" id="food_groceries2" name="food_groceries2">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas2">$</label>
-                    <input type="number" id="vehicle_gas2" name="vehicle_gas2">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary2">$</label>
-                    <input type="number" id="discretionary2" name="discretionary2">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income2">$</label>
-                    <input type="number" id="income2" name="income2">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total2">$</label>
-                    <input type="number" id="total2" name="total2">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 3</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent3">$</label>
-                    <input type="number" id="mortgage_rent3" name="mortgage_rent3">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie3">$</label>
-                    <input type="number" id="utilities3" name="utilities3">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries3">$</label>
-                    <input type="number" id="food_groceries3" name="food_groceries3">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas3">$</label>
-                    <input type="number" id="vehicle_gas3" name="vehicle_gas3">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary3">$</label>
-                    <input type="number" id="discretionary3" name="discretionary3">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income3">$</label>
-                    <input type="number" id="income3" name="income3">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total3">$</label>
-                    <input type="number" id="total3" name="total3">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 4</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent4">$</label>
-                    <input type="number" id="mortgage_rent4" name="mortgage_rent4">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie4">$</label>
-                    <input type="number" id="utilities4" name="utilities4">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries4">$</label>
-                    <input type="number" id="food_groceries4" name="food_groceries4">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas4">$</label>
-                    <input type="number" id="vehicle_gas4" name="vehicle_gas4">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary4">$</label>
-                    <input type="number" id="discretionary4" name="discretionary4">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income4">$</label>
-                    <input type="number" id="income4" name="income4">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total4">$</label>
-                    <input type="number" id="total4" name="total4">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 5</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent5">$</label>
-                    <input type="number" id="mortgage_rent5" name="mortgage_rent5">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie5">$</label>
-                    <input type="number" id="utilities5" name="utilities5">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries5">$</label>
-                    <input type="number" id="food_groceries5" name="food_groceries5">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas5">$</label>
-                    <input type="number" id="vehicle_gas5" name="vehicle_gas5">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary5">$</label>
-                    <input type="number" id="discretionary5" name="discretionary5">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income5">$</label>
-                    <input type="number" id="income5" name="income5">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total5">$</label>
-                    <input type="number" id="total5" name="total5">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 6</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent6">$</label>
-                    <input type="number" id="mortgage_rent6" name="mortgage_rent6">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie6">$</label>
-                    <input type="number" id="utilities6" name="utilities6">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries6">$</label>
-                    <input type="number" id="food_groceries6" name="food_groceries6">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas6">$</label>
-                    <input type="number" id="vehicle_gas6" name="vehicle_gas6">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary6">$</label>
-                    <input type="number" id="discretionary6" name="discretionary6">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income6">$</label>
-                    <input type="number" id="income6" name="income6">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total6">$</label>
-                    <input type="number" id="total6" name="total6">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 7</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent7">$</label>
-                    <input type="number" id="mortgage_rent7" name="mortgage_rent7">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie7">$</label>
-                    <input type="number" id="utilities7" name="utilities7">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries7">$</label>
-                    <input type="number" id="food_groceries7" name="food_groceries7">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas7">$</label>
-                    <input type="number" id="vehicle_gas7" name="vehicle_gas7">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary7">$</label>
-                    <input type="number" id="discretionary7" name="discretionary7">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income7">$</label>
-                    <input type="number" id="income7" name="income7">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total7">$</label>
-                    <input type="number" id="total7" name="total7">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 8</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent8">$</label>
-                    <input type="number" id="mortgage_rent8" name="mortgage_rent8">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie8">$</label>
-                    <input type="number" id="utilities8" name="utilities8">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries8">$</label>
-                    <input type="number" id="food_groceries8" name="food_groceries8">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas8">$</label>
-                    <input type="number" id="vehicle_gas8" name="vehicle_gas8">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary8">$</label>
-                    <input type="number" id="discretionary8" name="discretionary8">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income8">$</label>
-                    <input type="number" id="income8" name="income8">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total8">$</label>
-                    <input type="number" id="total8" name="total8">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 9</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent9">$</label>
-                    <input type="number" id="mortgage_rent9" name="mortgage_rent9">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie9">$</label>
-                    <input type="number" id="utilities9" name="utilities9">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries9">$</label>
-                    <input type="number" id="food_groceries9" name="food_groceries9">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas9">$</label>
-                    <input type="number" id="vehicle_gas9" name="vehicle_gas9">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary9">$</label>
-                    <input type="number" id="discretionary9" name="discretionary9">        
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income9">$</label>
-                    <input type="number" id="income9" name="income9">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total9">$</label>
-                    <input type="number" id="total9" name="total9">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 10</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent10">$</label>
-                    <input type="number" id="mortgage_rent10" name="mortgage_rent10">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie10">$</label>
-                    <input type="number" id="utilities10" name="utilities10">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries10">$</label>
-                    <input type="number" id="food_groceries10" name="food_groceries10">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas10">$</label>
-                    <input type="number" id="vehicle_gas10" name="vehicle_gas10">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary10">$</label>
-                    <input type="number" id="discretionary10" name="discretionary10">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income10">$</label>
-                    <input type="number" id="income10" name="income10">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total10">$</label>
-                    <input type="number" id="total10" name="total10">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 11</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent11">$</label>
-                    <input type="number" id="mortgage_rent11" name="mortgage_rent11">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie11">$</label>
-                    <input type="number" id="utilities11" name="utilities11">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries11">$</label>
-                    <input type="number" id="food_groceries11" name="food_groceries11">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas11">$</label>
-                    <input type="number" id="vehicle_gas11" name="vehicle_gas11">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary11">$</label>
-                    <input type="number" id="discretionary11" name="discretionary11">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income11">$</label>
-                    <input type="number" id="income11" name="income11">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total11">$</label>
-                    <input type="number" id="total11" name="total11">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 12</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent12">$</label>
-                    <input type="number" id="mortgage_rent12" name="mortgage_rent12">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie12">$</label>
-                    <input type="number" id="utilities12" name="utilities12">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries12">$</label>
-                    <input type="number" id="food_groceries12" name="food_groceries12">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas12">$</label>
-                    <input type="number" id="vehicle_gas12" name="vehicle_gas12">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary12">$</label>
-                    <input type="number" id="discretionary12" name="discretionary12">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income12">$</label>
-                    <input type="number" id="income12" name="income12">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total12">$</label>
-                    <input type="number" id="total12" name="total12">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 13</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent13">$</label>
-                    <input type="number" id="mortgage_rent13" name="mortgage_rent13">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie13">$</label>
-                    <input type="number" id="utilities13" name="utilities13">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries13">$</label>
-                    <input type="number" id="food_groceries13" name="food_groceries13">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas13">$</label>
-                    <input type="number" id="vehicle_gas13" name="vehicle_gas13">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary13">$</label>
-                    <input type="number" id="discretionary13" name="discretionary13">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income13">$</label>
-                    <input type="number" id="income13" name="income13">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total13">$</label>
-                    <input type="number" id="total13" name="total13">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 14</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent14">$</label>
-                    <input type="number" id="mortgage_rent14" name="mortgage_rent14">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie14">$</label>
-                    <input type="number" id="utilities14" name="utilities14">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries14">$</label>
-                    <input type="number" id="food_groceries14" name="food_groceries14">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas14">$</label>
-                    <input type="number" id="vehicle_gas14" name="vehicle_gas14">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary14">$</label>
-                    <input type="number" id="discretionary14" name="discretionary14">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income14">$</label>
-                    <input type="number" id="income14" name="income14">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total14">$</label>
-                    <input type="number" id="total14" name="total14">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 15</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent15">$</label>
-                    <input type="number" id="mortgage_rent15" name="mortgage_rent15">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie15">$</label>
-                    <input type="number" id="utilities15" name="utilities15">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries15">$</label>
-                    <input type="number" id="food_groceries15" name="food_groceries15">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas15">$</label>
-                    <input type="number" id="vehicle_gas15" name="vehicle_gas15">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary15">$</label>
-                    <input type="number" id="discretionary15" name="discretionary15">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income15">$</label>
-                    <input type="number" id="income15" name="income15">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total15">$</label>
-                    <input type="number" id="total15" name="total15">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 16</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent16">$</label>
-                    <input type="number" id="mortgage_rent16" name="mortgage_rent16">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie16">$</label>
-                    <input type="number" id="utilities16" name="utilities16">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries16">$</label>
-                    <input type="number" id="food_groceries16" name="food_groceries16">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas16">$</label>
-                    <input type="number" id="vehicle_gas16" name="vehicle_gas16">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary16">$</label>
-                    <input type="number" id="discretionary16" name="discretionary16">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income16">$</label>
-                    <input type="number" id="income16" name="income16">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total16">$</label>
-                    <input type="number" id="total16" name="total16">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 17</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent17">$</label>
-                    <input type="number" id="mortgage_rent17" name="mortgage_rent17">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie17">$</label>
-                    <input type="number" id="utilities17" name="utilities17">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries17">$</label>
-                    <input type="number" id="food_groceries17" name="food_groceries17">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas17">$</label>
-                    <input type="number" id="vehicle_gas17" name="vehicle_gas17">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary17">$</label>
-                    <input type="number" id="discretionary17" name="discretionary17">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income17">$</label>
-                    <input type="number" id="income17" name="income17">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total17">$</label>
-                    <input type="number" id="total17" name="total17">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 18</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent18">$</label>
-                    <input type="number" id="mortgage_rent18" name="mortgage_rent18">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie18">$</label>
-                    <input type="number" id="utilities18" name="utilities18">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries18">$</label>
-                    <input type="number" id="food_groceries18" name="food_groceries18">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas18">$</label>
-                    <input type="number" id="vehicle_gas18" name="vehicle_gas18">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary18">$</label>
-                    <input type="number" id="discretionary18" name="discretionary18">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income18">$</label>
-                    <input type="number" id="income18" name="income18">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total18">$</label>
-                    <input type="number" id="total18" name="total18">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 19</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent19">$</label>
-                    <input type="number" id="mortgage_rent19" name="mortgage_rent19">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie19">$</label>
-                    <input type="number" id="utilities19" name="utilities19">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries19">$</label>
-                    <input type="number" id="food_groceries19" name="food_groceries19">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas19">$</label>
-                    <input type="number" id="vehicle_gas19" name="vehicle_gas19">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary19">$</label>
-                    <input type="number" id="discretionary19" name="discretionary19">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income19">$</label>
-                    <input type="number" id="income19" name="income19">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total19">$</label>
-                    <input type="number" id="total19" name="total19">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 20</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent20">$</label>
-                    <input type="number" id="mortgage_rent20" name="mortgage_rent20">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie20">$</label>
-                    <input type="number" id="utilities20" name="utilities20">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries20">$</label>
-                    <input type="number" id="food_groceries20" name="food_groceries20">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas20">$</label>
-                    <input type="number" id="vehicle_gas20" name="vehicle_gas20">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary20">$</label>
-                    <input type="number" id="discretionary20" name="discretionary20">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income20">$</label>
-                    <input type="number" id="income20" name="income20">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total20">$</label>
-                    <input type="number" id="total20" name="total20">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 21</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent21">$</label>
-                    <input type="number" id="mortgage_rent21" name="mortgage_rent21">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie21">$</label>
-                    <input type="number" id="utilities21" name="utilities21">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries21">$</label>
-                    <input type="number" id="food_groceries21" name="food_groceries21">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas21">$</label>
-                    <input type="number" id="vehicle_gas21" name="vehicle_gas21">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary21">$</label>
-                    <input type="number" id="discretionary21" name="discretionary21">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income21">$</label>
-                    <input type="number" id="income21" name="income21">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total21">$</label>
-                    <input type="number" id="total21" name="total21">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 22</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent22">$</label>
-                    <input type="number" id="mortgage_rent22" name="mortgage_rent22">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie22">$</label>
-                    <input type="number" id="utilities22" name="utilities22">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries22">$</label>
-                    <input type="number" id="food_groceries22" name="food_groceries22">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas22">$</label>
-                    <input type="number" id="vehicle_gas22" name="vehicle_gas22">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary22">$</label>
-                    <input type="number" id="discretionary22" name="discretionary22">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income22">$</label>
-                    <input type="number" id="income22" name="income22">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total22">$</label>
-                    <input type="number" id="total22" name="total22">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 23</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent23">$</label>
-                    <input type="number" id="mortgage_rent23" name="mortgage_rent23">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie23">$</label>
-                    <input type="number" id="utilities23" name="utilities23">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries23">$</label>
-                    <input type="number" id="food_groceries23" name="food_groceries23">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas23">$</label>
-                    <input type="number" id="vehicle_gas23" name="vehicle_gas23">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary23">$</label>
-                    <input type="number" id="discretionary23" name="discretionary23">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income23">$</label>
-                    <input type="number" id="income23" name="income23">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total23">$</label>
-                    <input type="number" id="total23" name="total23">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 24</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent24">$</label>
-                    <input type="number" id="mortgage_rent24" name="mortgage_rent24">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie24">$</label>
-                    <input type="number" id="utilities24" name="utilities24">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries24">$</label>
-                    <input type="number" id="food_groceries24" name="food_groceries24">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas24">$</label>
-                    <input type="number" id="vehicle_gas24" name="vehicle_gas24">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary24">$</label>
-                    <input type="number" id="discretionary24" name="discretionary24">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income24">$</label>
-                    <input type="number" id="income24" name="income24">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total24">$</label>
-                    <input type="number" id="total24" name="total24">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 25</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent25">$</label>
-                    <input type="number" id="mortgage_rent25" name="mortgage_rent25">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie25">$</label>
-                    <input type="number" id="utilities25" name="utilities25">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries25">$</label>
-                    <input type="number" id="food_groceries25" name="food_groceries25">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas25">$</label>
-                    <input type="number" id="vehicle_gas25" name="vehicle_gas25">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary25">$</label>
-                    <input type="number" id="discretionary25" name="discretionary25">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income25">$</label>
-                    <input type="number" id="income25" name="income25">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total25">$</label>
-                    <input type="number" id="total25" name="total25">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 26</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent26">$</label>
-                    <input type="number" id="mortgage_rent26" name="mortgage_rent26">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie26">$</label>
-                    <input type="number" id="utilities26" name="utilities26">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries26">$</label>
-                    <input type="number" id="food_groceries26" name="food_groceries26">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas26">$</label>
-                    <input type="number" id="vehicle_gas26" name="vehicle_gas26">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary26">$</label>
-                    <input type="number" id="discretionary26" name="discretionary26">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income26">$</label>
-                    <input type="number" id="income26" name="income26">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total26">$</label>
-                    <input type="number" id="total26" name="total26">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 27</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent27">$</label>
-                    <input type="number" id="mortgage_rent27" name="mortgage_rent27">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie27">$</label>
-                    <input type="number" id="utilities27" name="utilities27">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries27">$</label>
-                    <input type="number" id="food_groceries27" name="food_groceries27">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas27">$</label>
-                    <input type="number" id="vehicle_gas27" name="vehicle_gas27">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary27">$</label>
-                    <input type="number" id="discretionary27" name="discretionary27">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income27">$</label>
-                    <input type="number" id="income27" name="income27">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total27">$</label>
-                    <input type="number" id="total27" name="total27">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 28</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent28">$</label>
-                    <input type="number" id="mortgage_rent28" name="mortgage_rent28">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie28">$</label>
-                    <input type="number" id="utilities28" name="utilities28">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries28">$</label>
-                    <input type="number" id="food_groceries28" name="food_groceries28">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas28">$</label>
-                    <input type="number" id="vehicle_gas28" name="vehicle_gas28">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary28">$</label>
-                    <input type="number" id="discretionary28" name="discretionary28">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income28">$</label>
-                    <input type="number" id="income28" name="income28">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total28">$</label>
-                    <input type="number" id="total28" name="total28">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 29</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent29">$</label>
-                    <input type="number" id="mortgage_rent29" name="mortgage_rent29">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie29">$</label>
-                    <input type="number" id="utilities29" name="utilities29">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries29">$</label>
-                    <input type="number" id="food_groceries29" name="food_groceries29">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas29">$</label>
-                    <input type="number" id="vehicle_gas29" name="vehicle_gas29">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary29">$</label>
-                    <input type="number" id="discretionary29" name="discretionary29">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income29">$</label>
-                    <input type="number" id="income29" name="income29">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total29">$</label>
-                    <input type="number" id="total29" name="total29">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 30</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent30">$</label>
-                    <input type="number" id="mortgage_rent30" name="mortgage_rent30">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie30">$</label>
-                    <input type="number" id="utilities30" name="utilities30">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries30">$</label>
-                    <input type="number" id="food_groceries30" name="food_groceries30">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas30">$</label>
-                    <input type="number" id="vehicle_gas30" name="vehicle_gas30">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary30">$</label>
-                    <input type="number" id="discretionary30" name="discretionary30">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income30">$</label>
-                    <input type="number" id="income30" name="income30">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total30">$</label>
-                    <input type="number" id="total30" name="total30">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>Day 31</td>
-            <td>
-                <form>
-                    <label for="mortgage_rent31">$</label>
-                    <input type="number" id="mortgage_rent31" name="mortgage_rent31">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie31">$</label>
-                    <input type="number" id="utilities31" name="utilities31">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries31">$</label>
-                    <input type="number" id="food_groceries31" name="food_groceries31">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas31">$</label>
-                    <input type="number" id="vehicle_gas31" name="vehicle_gas31">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary31">$</label>
-                    <input type="number" id="discretionary31" name="discretionary31">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income31">$</label>
-                    <input type="number" id="income31" name="income31">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="total31">$</label>
-                    <input type="number" id="total31" name="total31">
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Total</strong></td>
-            <td>
-                <form>
-                    <label for="mortgage_rent_total">$</label>
-                    <input type="number" id="mortgage_rent_total" name="mortgage_rent_total">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="utilitie_total">$</label>
-                    <input type="number" id="utilities_total" name="utilities_total">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="food_groceries_total">$</label>
-                    <input type="number" id="food_groceries_total" name="food_groceries_total">    
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="vehicle_gas_total">$</label>
-                    <input type="number" id="vehicle_gas_total" name="vehicle_gas_total">
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="descretionary_total">$</label>
-                    <input type="number" id="discretionary_total" name="discretionary_total">      
-                </form>
-            </td>
-            <td>
-                <form>
-                    <label for="income_total">$</label>
-                    <input type="number" id="income_total" name="income_total">
-                </form>
-            </td>
-        </tr>
-    </table>
+        <tr id="row0"></tr>
+    
+
+    <script>
+        //For Loop to reate rows
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("tr")
+            newElement.setAttribute("id", `row${x}`)
+        
+            let currentElement = document.getElementById(`row${x - 1}`)
+            let parent = currentElement.parentNode
+            parent.insertBefore(newElement, currentElement.nextSibling);
+        }
+        //For loop to create Data Tables
+        //Balance Total
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("td");
+            newElement.setAttribute("id", `balance_total${x}`);
+
+            let currentElement = document.getElementById(`row${x}`);
+            let parent = currentElement.parentNode;
+            parent.insertBefore(newElement, currentElement.nextSibling);
+        }
+        //Income Data Table
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("td");
+            newElement.setAttribute("id", `income${x}`);
+
+            let currentElement = document.getElementById(`row${x}`);
+            let parent = currentElement.parentNode;
+            parent.insertBefore(newElement, currentElement.nextSibling);
+        }
+        //Discretionary Data Table
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("td");
+            newElement.setAttribute("id", `discretionary${x}`);
+
+            let currentElement = document.getElementById(`row${x}`);
+            let parent = currentElement.parentNode;
+            parent.insertBefore(newElement, currentElement.nextSibling);
+        }
+        //Vehicle&Gas Data Table
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("td");
+            newElement.setAttribute("id", `vehicle_gas${x}`);
+
+            let currentElement = document.getElementById(`row${x}`);
+            let parent = currentElement.parentNode;
+            parent.insertBefore(newElement, currentElement.nextSibling);
+        }
+        //Food&Groceries Data Table
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("td");
+            newElement.setAttribute("id", `food_groceries${x}`);
+
+            let currentElement = document.getElementById(`row${x}`);
+            let parent = currentElement.parentNode;
+            parent.insertBefore(newElement, currentElement.nextSibling);
+        }
+        //Utilities Data Table
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("td");
+            newElement.setAttribute("id", `utilities${x}`);
+
+            let currentElement = document.getElementById(`row${x}`);
+            let parent = currentElement.parentNode;
+            parent.insertBefore(newElement, currentElement.nextSibling);
+        }
+        //Mortgage/Rent Data Table
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("td");
+            newElement.setAttribute("id", `mortgage_rent${x}`);
+
+            let currentElement = document.getElementById(`row${x}`);
+            let parent = currentElement.parentNode;
+            parent.insertBefore(newElement, currentElement.nextSibling);
+        }
+        //Day Data Table
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("td");
+            newElement.setAttribute("id", `day${x}`);
+            let newContent = document.createTextNode(`Day ${x}`);
+            newElement.appendChild(newContent);
+
+            let currentElement = document.getElementById(`row${x}`);
+            let parent = currentElement.parentNode;
+            parent.insertBefore(newElement, currentElement.nextSibling);
+        }
+        //Mortgage/Rent Form
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("form");
+            newElement.setAttribute("id", `mortgage_form${x}`);
+
+            let currentElement = document.getElementById(`mortgage_rent${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("label");
+            newElement.setAttribute("for", `mortgage_rent_input${x}`);
+            let newContent = document.createTextNode("$");
+            newElement.appendChild(newContent);
+
+            let currentElement = document.getElementById(`mortgage_form${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("input");
+            newElement.type = "number";
+            newElement.setAttribute("id", `mortgage_rent_input${x}`);
+            
+            let currentElement = document.getElementById(`mortgage_form${x}`);
+            currentElement.appendChild(newElement)
+        }
+        //End of Mortgage/Rent Form
+
+        //Utilities Form
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("form");
+            newElement.setAttribute("id", `utilities_form${x}`);
+
+            let currentElement = document.getElementById(`utilities${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("label");
+            newElement.setAttribute("for", `utilities_input${x}`);
+            let newContent = document.createTextNode("$");
+            newElement.appendChild(newContent);
+
+            let currentElement = document.getElementById(`utilities_form${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("input");
+            newElement.type = "number";
+            newElement.setAttribute("id", `utilities_input${x}`);
+            
+            let currentElement = document.getElementById(`utilities_form${x}`);
+            currentElement.appendChild(newElement)
+        }
+        //End of utilities Form
+
+        //Food&Groceries Form
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("form");
+            newElement.setAttribute("id", `food_groceries_form${x}`);
+
+            let currentElement = document.getElementById(`food_groceries${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("label");
+            newElement.setAttribute("for", `food_groceries_input${x}`);
+            let newContent = document.createTextNode("$");
+            newElement.appendChild(newContent);
+
+            let currentElement = document.getElementById(`food_groceries_form${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("input");
+            newElement.type = "number";
+            newElement.setAttribute("id", `food_groceries_input${x}`);
+            
+            let currentElement = document.getElementById(`food_groceries_form${x}`);
+            currentElement.appendChild(newElement)
+        }
+        //End of Food&Groceries Form
+
+        //Vehicle&Gas Form
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("form");
+            newElement.setAttribute("id", `vehicle_gas_form${x}`);
+
+            let currentElement = document.getElementById(`vehicle_gas${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("label");
+            newElement.setAttribute("for", `vehicle_gas_input${x}`);
+            let newContent = document.createTextNode("$");
+            newElement.appendChild(newContent);
+
+            let currentElement = document.getElementById(`vehicle_gas_form${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("input");
+            newElement.type = "number";
+            newElement.setAttribute("id", `vehicle_gas_input${x}`);
+            
+            let currentElement = document.getElementById(`vehicle_gas_form${x}`);
+            currentElement.appendChild(newElement)
+        }
+        //End of Vehicle&Gas Form
+
+        //Discretionary Form
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("form");
+            newElement.setAttribute("id", `discretionary_form${x}`);
+
+            let currentElement = document.getElementById(`discretionary${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("label");
+            newElement.setAttribute("for", `discretionary_input${x}`);
+            let newContent = document.createTextNode("$");
+            newElement.appendChild(newContent);
+
+            let currentElement = document.getElementById(`discretionary_form${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("input");
+            newElement.type = "number";
+            newElement.setAttribute("id", `discretionary_input${x}`);
+            
+            let currentElement = document.getElementById(`discretionary_form${x}`);
+            currentElement.appendChild(newElement)
+        }
+        //End of Discretionary Form
+
+        //Income Form
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("form");
+            newElement.setAttribute("id", `income_form${x}`);
+
+            let currentElement = document.getElementById(`income${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("label");
+            newElement.setAttribute("for", `income_input${x}`);
+            let newContent = document.createTextNode("$");
+            newElement.appendChild(newContent);
+
+            let currentElement = document.getElementById(`income_form${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("input");
+            newElement.type = "number";
+            newElement.setAttribute("id", `income_input${x}`);
+            
+            let currentElement = document.getElementById(`income_form${x}`);
+            currentElement.appendChild(newElement)
+        }
+        //End of Income Form
+
+        //Balance Form
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("form");
+            newElement.setAttribute("id", `balance_total_form${x}`);
+
+            let currentElement = document.getElementById(`balance_total${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("label");
+            newElement.setAttribute("for", `balance_total_input${x}`);
+            let newContent = document.createTextNode("$");
+            newElement.appendChild(newContent);
+
+            let currentElement = document.getElementById(`balance_total_form${x}`);
+            currentElement.appendChild(newElement);
+        }
+        
+        for(let x = 1; x < 32; x++){
+            let newElement = document.createElement("input");
+            newElement.type = "number";
+            newElement.setAttribute("id", `balance_total_input${x}`);
+            
+            let currentElement = document.getElementById(`balance_total_form${x}`);
+            currentElement.appendChild(newElement)
+        }
+        //End of Balance Form
+        
+    </script>
+    
 </body>
 </html>
