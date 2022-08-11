@@ -1,6 +1,5 @@
 h1{
-    position: absolute;
-    top: 8%;
+    position: relative;
     left: 12%;
     font-size: 48px;
 }
