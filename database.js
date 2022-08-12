@@ -9,6 +9,7 @@ const maxMonthlySpend = {
     "Food&Groceries": null,
     "Vehicle&Gas": null,
     "Descretionary": null,
+    "Income": null,
 };
 
 // posting data to the DB (url is currently a placeholder - feel free to change it)
@@ -20,7 +21,9 @@ router.post("/setMonthlySpend", (req, res, next) => {
     maxMonthlySpend["Food&Groceries"] = req.body["Food&Groceries"]
     maxMonthlySpend["Vehicle&Gas"] = req.body["Vehicle&Gas"]
     maxMonthlySpend["Descretionary"] = req.body["Descretionary"]
+    maxMonthlySpend["Income"] = req.body["Income"]
 }
 )
+
 
 module.exports = router;
