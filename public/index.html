@@ -16,6 +16,7 @@
         <h1>Create Budget</h1>
         <p>Divide your monthly income into different spending categories. Decide how much you should spend on each category each month.</p>
         <div class="'inputs">
+            <form action="/setValues/setMonthlySpend" method="POST">
             <label for="mortgage_rent">Mortgage/Rent</label>
             <input type="number" name="mortgage_rent" id="mortage_rent" value="">
             <br>
@@ -37,10 +38,10 @@
             <label for="stratingBalance">Starting Balance</label>
             <input type="number" name="startingBalance" id="startingBalance" value="">
             <br>
+            <input type="submit">
+        </form>
         </div>
-        <div>
-            <button id="submit-budget">Submit</button>
-        </div>
+        
     </div>
    
 </body>

@@ -24,6 +24,7 @@ router.post("/setMonthlySpend", (req, res, next) => {
     maxMonthlySpend["Descretionary"] = req.body["descretionary"]
     maxMonthlySpend["Income"] = req.body["income"]
     maxMonthlySpend["Savings"] = req.body["savings"]
+    res.redirect("/public/woohoo.html")
 }
 )
 
