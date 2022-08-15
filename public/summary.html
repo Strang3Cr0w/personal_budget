@@ -5,12 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Budget</title>
-    <link href="stylesheet.css" rel="stylesheet" defer>
+    <title>Budget Summary</title>
+    <link href="summary.css" rel="stylesheet" defer>
 </head>
-
 <body>
-    <h1>Budget Worksheet</h1>
+<div id="wrapper">
+    <div class="navmenu">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="expenses.html">Expenses</a>
+                </li>
+                <li>
+                    <a href="summary.html">Summary</a>
+                </li>
+                <li>
+                    <a href="/view/woohoo.ejs">woohoo</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Budget Summary</h1>
     <table>
         <tr id="header_row">
             <th id="monthdatalist">
@@ -42,6 +60,7 @@
             <th>Balance Total</th>
         </tr>
         <tr id="row0"></tr>
+    </div>
 
 
         <script>

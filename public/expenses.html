@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses</title>
+    <link href="expenses.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="navmenu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="expenses.html">Expenses</a>
+                    </li>
+                    <li>
+                        <a href="summary.html">Summary</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Enter Your Expenses Below</h1> 
+        <p>
+            First select the month and date for when the expense was made. Next select the category of the expense.
+            You have multiple fields to give you enough space if you made multiple purchases/payments for that same category.
+            Once you've entered all of your purchases/payments, you total will be automatically calculated and transferred 
+            to your summary. Once you're done entering your expenses, visit the summary page to view your totals.
+        </p>
+        <br>
+        <div class="dateselect">
+            <form>
+                <label for="date">Date</label> 
+                <input type="date" id="date" name="date">
+            </form>
+            <form>
+                <label for="expenselist">Expense</label>
+                    <input type="text" list="expenses" id="expenselist" name="expenselist">
+                    <datalist id="expenses">
+                        <option value="Mortgage/Rent"></option>
+                        <option value="Utilities"></option>
+                        <option value="Food & Groceries"></option>
+                        <option value="Vehicle & Gas"></option>
+                        <option value="Discretionary"></option>
+                    </datalist>
+            </form>
+        </div>
+        <div class="expenses">
+            <form>
+                <span id="expense_type">Enter Expenses</span><br>
+                <input type="number" id="expense1" name="expense1" placeholder="Enter Amount"><br>
+                <input type="number" id="expense2" name="expense2" placeholder="Enter Amount"><br>
+                <input type="number" id="expense3" name="expense3" placeholder="Enter Amount"><br>
+                <input type="number" id="expnese5" name="expense5" placeholder="Enter Amount"><br>
+                <span id="total">Total</span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
