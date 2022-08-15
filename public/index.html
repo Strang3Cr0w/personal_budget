@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget Home</title>
     <link href="index.css" rel="stylesheet">
+    <script src="index.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -41,7 +42,7 @@
             how much you spend on these categories. Set some realistic, attainable maximums for your variable
             expenses. We will take what you spend and compare it against your income. Ideally, the difference should
             be positive and you can then put that money towards your financial goals!<br><br> Once you've entered
-            the absolute maximum you're willing to spend each month for every category, save it with the save button.
+            the absolute maximum you're willing to spend each month for every category, save it with the submit button.
             You can always change these amounts later as needed. Then, go to the expenses page to enter your expenses.
 
         </p>
@@ -49,25 +50,19 @@
     <div class="inputs">
         <form action="/setValues/setMonthlySpend" method="POST">
             <label for="mortgage_rent">Mortgage/Rent $</label>
-            <input type="number" name="mortgage_rent" id="mortage_rent" value="">
+            <input type="number" name="mortgage_rent" id="mortage_rent">
             <br>
             <label for="utilities">Utilities $</label>
-            <input type="number" name="utilities" id="utilities" value="">
+            <input type="number" name="utilities" id="utilities">
             <br>
             <label for="food_groceries">Food & Groceries $</label>
-            <input type="number" name="food_groceries" id="food_groceries" value="">
+            <input type="number" name="food_groceries" id="food_groceries">
             <br>
             <label for="vehicle_gas">Vehicle & Gas $</label>
-            <input type="number" name="vehicle_gas" id="vehicle_gas" value="">
+            <input type="number" name="vehicle_gas" id="vehicle_gas">
             <br>
             <label for="discretionary">Discretionary $</label>
-            <input type="number" name="discretionary" id="discretionary" value="">
-            <br>
-            <label for="income">Income</label>
-            <input type="number" name="income" id="number" value="">
-            <br>
-            <label for="startingBalance">Starting Balance</label>
-            <input type="number" name="startingBalance" id="startingBalance" value="">
+            <input type="number" name="discretionary" id="discretionary">
             <br>
             <br>
             <input id="submit" type="submit">
