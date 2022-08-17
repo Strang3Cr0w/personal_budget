@@ -119,3 +119,9 @@ p{
     font-weight: bold;
     background:rgb(175, 240, 125);
 }
+
+#expenses{
+    width: 200px;
+    height:50px;
+    font-size: 22px
+}

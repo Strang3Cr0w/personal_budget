@@ -43,14 +43,14 @@
             </form>
             <form>
                 <label for="expenselist">Expense</label>
-                    <input type="text" list="expenses" id="expenselist" name="expenselist">
-                    <datalist id="expenses">
-                        <option value="Mortgage/Rent"></option>
-                        <option value="Utilities"></option>
-                        <option value="Food & Groceries"></option>
-                        <option value="Vehicle & Gas"></option>
-                        <option value="Discretionary"></option>
-                    </datalist>
+                    <select id="expenses">
+                        <option value="none" selected disabled hidden></option>
+                        <option value="mortgageRent">Mortgage/Rent</option>
+                        <option value="utilities">Utilities</option>
+                        <option value="foodGroceries">Food & Groceries</option>
+                        <option value="vehicleGas">Vehicle & Gas</option>
+                        <option value="discretionary">Discretionary</option>
+                    </select>
             </form>
         </div>
         <div class="expenses">

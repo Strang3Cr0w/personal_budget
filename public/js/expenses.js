@@ -6,14 +6,14 @@ submit.addEventListener('click', () => {
     const d = new Date(date);
     const month = numberToMonth[d.getMonth()+1];
     const day = d.getDate()+1;
-    const expense = document.getElementById('expenselist').value;
+    const expense = document.getElementById('expenses').value;
     const expense1 = document.getElementById('expense1').value;
     const expense2 = document.getElementById('expense2').value;
     const expense3 = document.getElementById('expense3').value;
     const expense4 = document.getElementById('expense4').value;
     const total = Number(expense1) + Number(expense2) + Number(expense3) + Number(expense4);
     console.log(date, month, day, expense, total)
-    fetch(`/setValues/expenses?date=${date}&month=${month}&day=${day}&expense=${expense}&total=${total}`, {
+    fetch(`/expenses?date=${date}&month=${month}&day=${day}&expense=${expense}&total=${total}`, {
         method: 'POST'
     })
     

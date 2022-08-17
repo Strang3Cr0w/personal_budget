@@ -7,8 +7,11 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.set("view engine", "ejs");
 
-const databaseRouter = require("./database.js");
-app.use("/setValues", databaseRouter);
+const expensesRouter = require("./Routes/expensesRouter.js");
+app.use("/expenses", expensesRouter);
+
+const databaseRouter = require("./Routes/budgetRouter.js");
+app.use("/budget", databaseRouter);
 
 app.get("/view/woohoo.ejs", (req, res, next) =>{
     res.render("woohoo");
