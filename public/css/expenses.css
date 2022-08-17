@@ -12,7 +12,7 @@
 }
 
 body{
-    background: url(./LightGreenGradientBackground.jpg);
+    background: url(/img/LightGreenGradientBackground.jpg);
     background-size: cover;
     background-position: center;
 }
