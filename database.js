@@ -1,6 +1,4 @@
 const express = require("express");
-const app = express();
-
 const router = express.Router();
 
 const maxMonthlySpend = {
@@ -24,7 +22,11 @@ router.post("/setMonthlySpend", (req, res, next) => {
     maxMonthlySpend["Descretionary"] = req.body["descretionary"]
     maxMonthlySpend["Income"] = req.body["income"]
     maxMonthlySpend["Savings"] = req.body["savings"]
-    res.redirect("/public/woohoo.html")
+    console.log(maxMonthlySpend);
+    setTimeout(function(){
+        res.redirect("/setbudget.html");
+    }, 2500);
+    
 }
 )
 

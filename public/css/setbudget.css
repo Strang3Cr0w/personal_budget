@@ -51,36 +51,61 @@ h1{
     font-size: 48px;
 }
 
-table{
-    table-layout: fixed;
-    width: 400px;
-    text-align: center;
-    font-size: 18px;
-    padding: 1%;
-    position:absolute;
-    top: 19%;
-    left: 12%;
+p{
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.inputs{
+    color: black;
     border: 25px solid #160053;
     border-radius: 5px;
     border-spacing: 15px;
+    width: 600px;
+    text-align: right;
+    font-size: 28px;
+    padding: 10px 10px;
+    margin-left: 50px;
 }
 
-th, td{
-    width: 150px;
+.inputs form input{
+    width: 200px;
+    height: 50px;
+    font-size: 28px;
+    text-align: right;
     border: 5px solid #160053;
     border-radius: 5px;
 }
 
-#monthdatalist{
-    border: 5px solid red;
+#submit{
+    margin-top: 5px;
+    text-align: center;
+    border: 5px solid #160053;
+    cursor: pointer;
+    font-weight: bold;
+    background:rgb(175, 240, 125);
 }
 
-#monthdatalist input{
-    width: 120px;
+.next{
+    position: flex;
+    font-size: 36px;
+    float: right;
+    margin-right: 250px;
+    margin-top: 150px;
+    padding: 25px;
+    border: 5px solid #160053;
+    border-radius: 5px;
+    background:rgb(175, 240, 125);
+    padding: 10px;
 }
 
-table input{
-    width: 100px;
-    text-align: right;
-    font-size: 18px;
+.next a{
+    text-decoration: none;
+}
+
+.next img{
+    width: 30px;
 }

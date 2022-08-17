@@ -1,17 +1,21 @@
 const express = require("express");
 const app = express();
-const databaseRouter = require("./database.js")
 
-app.use(express.static("public"))
-app.use(express.urlencoded({extended:true}))
+app.use(express.static("public"));
+app.use(express.static(__dirname + '/public'));
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
 app.set("view engine", "ejs") 
 
-app.use("/setValues", databaseRouter)
+const databaseRouter = require("./database.js");
+app.use("/setValues", databaseRouter);
 
-app.get("/public/woohoo.html", (req,res)=>{
-res.render("woohoo.ejs")
+app.get("/view/woohoo.ejs", (req, res, next) =>{
+    res.render("woohoo");
 })
 
-app.listen(3000, ()=>{
-    console.log("LISTENING: OK")
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, ()=>{
+    console.log(`LISTENING PORT: ${PORT} OK`)
 })

@@ -28,7 +28,7 @@ nav{
     padding: 20px 20px;
     border-radius: 5px;
     background-color: rgb(175, 240, 125);
-    width: 500px;
+    width: 650px;
     text-align: center;
 }
 
@@ -91,4 +91,30 @@ p{
     cursor: pointer;
     font-weight: bold;
     background:rgb(175, 240, 125);
+}
+
+.next{
+    position: flex;
+    font-size: 36px;
+    float: right;
+    margin-right: 75px;
+    margin-top: 175px;
+    padding: 25px;
+    border: 5px solid #160053;
+    border-radius: 5px;
+    background:rgb(175, 240, 125);
+    padding: 10px;
+}
+
+.next a{
+    text-decoration: none;
+}
+
+.next img{
+    width: 30px;
+}
+
+#budgeticons{
+    width: 500px;
+    margin-left: 175px;
 }
