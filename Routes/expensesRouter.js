@@ -15,6 +15,7 @@ expensesRouter.post('/', (req, res) => {
         expense: req.query.expense,
         total: req.query.total
     };
+    console.log(newExpense)
     if (expenses.length>0){
         for (let i=0; i<expenses.length; i++){
             console.log(expenses[i])
@@ -24,7 +25,7 @@ expensesRouter.post('/', (req, res) => {
     } } else{
         expenses.push(newExpense)
     }
-   
+    console.log(expenses)
     })
     
  
