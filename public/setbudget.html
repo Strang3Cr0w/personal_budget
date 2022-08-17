@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Budget</title>
+    <link href="./css/setbudget.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="navmenu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="setbudget.html">Set Budget</a>
+                    </li>
+                    <li>
+                        <a href="expenses.html">Expenses</a>
+                    </li>
+                    <li>
+                        <a href="summary.html">Summary</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h1>Set Your Budget</h1>
+            <br>
+            <p>
+                Let's start by inputting the max amount you want to spend each month per category. The first two
+                categories are considered fixed expenses, mortgage/rent and utilities. These are expenses that you
+                will have to pay no matter what.<br><br> The three following categories are variable expenses. You have control over
+                how much you spend on these categories. Set some realistic, attainable maximums for your variable
+                expenses. We will take what you spend and compare it against your income. Ideally, the difference should
+                be positive and you can then put that money towards your financial goals!<br><br> Once you've entered
+                the absolute maximum you're willing to spend each month for every category, save it with the submit button.
+                You can always change these amounts later as needed. Then, go to the expenses page to enter your expenses.
+            </p>
+        </div>
+        <div class="next">
+            <a href="expenses.html">Expenses</a>
+            <a href="expenses.html"><img src="./img/greenarrow.jpg"></a>
+        </div>
+        <div class="inputs">
+            <form action="/setValues/setMonthlySpend" method="POST">
+                <label for="mortgage_rent">Mortgage/Rent $</label>
+                <input type="number" name="mortgage_rent" id="mortage_rent">
+                <br>
+                <label for="utilities">Utilities $</label>
+                <input type="number" name="utilities" id="utilities">
+                <br>
+                <label for="food_groceries">Food & Groceries $</label>
+                <input type="number" name="food_groceries" id="food_groceries">
+                <br>
+                <label for="vehicle_gas">Vehicle & Gas $</label>
+                <input type="number" name="vehicle_gas" id="vehicle_gas">
+                <br>
+                <label for="discretionary">Discretionary $</label>
+                <input type="number" name="discretionary" id="discretionary">
+                <br>
+                <span id="saved"></span>
+                <input id="submit" type="submit">
+            </form>
+        </div>
+    </div>
+<script>
+    const saved = document.getElementById("saved");
+    const submit = document.getElementById("submit");
+
+    submit.addEventListener("click", () =>{
+        saved.innerHTML = "Saved!";
+        setTimeout(function(){
+            saved.innerHTML = "";
+        }, 2500);
+    })
+</script>
+</body>
+</html>
