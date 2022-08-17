@@ -10,7 +10,7 @@ const maxMonthlySpend = JSON.parse(maxMonthlySpendJSON);
 
 //api data to be found at '/setValues/setMonthlySpend
 router.get("/", (req,res) => {
-    res.send(maxMonthlySpend)
+    res.send({maxMonthlySpend: maxMonthlySpend})
 })
 
 // posting data to the DB (url is currently a placeholder - feel free to change it)

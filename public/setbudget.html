@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Set Budget</title>
     <link href="./css/setbudget.css" rel="stylesheet" type="text/css">
+    <script src="/js/setbudget.js" type="text/javascript" defer></script>
 </head>
 <body>
     <div id="wrapper">
@@ -48,35 +49,24 @@
         <div class="inputs">
             <form action="/budget" method="POST">
                 <label for="mortgageRent">Mortgage/Rent $</label>
-                <input type="number" name="mortgageRent" id="mortageRent">
+                <input type="number" name="mortgageRent" id="mortgageRent" placeholder="100">
                 <br>
                 <label for="utilities">Utilities $</label>
-                <input type="number" name="utilities" id="utilities">
+                <input type="number" name="utilities" id="utilities" placeholder="">
                 <br>
                 <label for="foodGroceries">Food & Groceries $</label>
-                <input type="number" name="foodGroceries" id="foodGroceries">
+                <input type="number" name="foodGroceries" id="foodGroceries" placeholder="">
                 <br>
                 <label for="vehicleGas">Vehicle & Gas $</label>
-                <input type="number" name="vehicleGas" id="vehicleGas">
+                <input type="number" name="vehicleGas" id="vehicleGas" placeholder="">
                 <br>
                 <label for="discretionary">Discretionary $</label>
-                <input type="number" name="discretionary" id="discretionary">
+                <input type="number" name="discretionary" id="discretionary" placeholder="">
                 <br>
                 <span id="saved"></span>
                 <input id="submit" type="submit">
             </form>
         </div>
     </div>
-<script>
-    const saved = document.getElementById("saved");
-    const submit = document.getElementById("submit");
-
-    submit.addEventListener("click", () =>{
-        saved.innerHTML = "Saved!";
-        setTimeout(function(){
-            saved.innerHTML = "";
-        }, 2500);
-    })
-</script>
 </body>
 </html>
