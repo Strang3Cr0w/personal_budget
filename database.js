@@ -1,15 +1,9 @@
 const express = require("express");
 const router = express.Router();
+const fs = require("fs");
 
-const maxMonthlySpend = {
-    "mortgageRent": null,
-    "utilities": null,
-    "foodGroceries": null,
-    "vehicleGas": null,
-    "discretionary": null,
-    //"Income": null,
-    //"Savings": null
-};
+const maxMonthlySpendJSON = fs.readFileSync("./maxMonthlySpend.txt", {encoding: "utf-8", flag: "r"});
+const maxMonthlySpend = JSON.parse(maxMonthlySpendJSON);
 
 // posting data to the DB (url is currently a placeholder - feel free to change it)
 // BTW this route is expecting data to come through a HTML form..
@@ -20,9 +14,8 @@ router.post("/setMonthlySpend", (req, res, next) => {
     maxMonthlySpend["foodGroceries"] = req.body["foodGroceries"]
     maxMonthlySpend["vehicleGas"] = req.body["vehicleGas"]
     maxMonthlySpend["discretionary"] = req.body["discretionary"]
-    //maxMonthlySpend["Income"] = req.body["income"]
-    //maxMonthlySpend["Savings"] = req.body["savings"]
-    console.log(maxMonthlySpend);
+    fs.writeFileSync("maxMonthlySpend.txt", JSON.stringify(maxMonthlySpend, null, 4), "utf-8");
+    console.log("Write Operations Done")
     setTimeout(function(){
         res.redirect("/setbudget.html");
     }, 2500);
