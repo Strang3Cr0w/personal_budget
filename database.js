@@ -26,9 +26,6 @@ router.post("/setMonthlySpend", (req, res, next) => {
     setTimeout(function(){
         res.redirect("/setbudget.html");
     }, 2500);
-    
-}
-)
-
+});
 
 module.exports = router;
