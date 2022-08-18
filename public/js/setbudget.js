@@ -7,11 +7,11 @@ const currentMaxMonthlySpend = () =>{
     })
     .then(response =>{
         const currentMaxMonthlySpend = response.maxMonthlySpend;
-        document.getElementById("mortgageRent").setAttribute("placeholder", currentMaxMonthlySpend["mortgageRent"]);
-        document.getElementById("utilities").setAttribute("placeholder", currentMaxMonthlySpend["utilities"]);
-        document.getElementById("foodGroceries").setAttribute("placeholder", currentMaxMonthlySpend["foodGroceries"]);
-        document.getElementById("vehicleGas").setAttribute("placeholder", currentMaxMonthlySpend["vehicleGas"]);
-        document.getElementById("discretionary").setAttribute("placeholder", currentMaxMonthlySpend["discretionary"]);
+        document.getElementById("mortgageRent").setAttribute("value", currentMaxMonthlySpend["mortgageRent"]);
+        document.getElementById("utilities").setAttribute("value", currentMaxMonthlySpend["utilities"]);
+        document.getElementById("foodGroceries").setAttribute("value", currentMaxMonthlySpend["foodGroceries"]);
+        document.getElementById("vehicleGas").setAttribute("value", currentMaxMonthlySpend["vehicleGas"]);
+        document.getElementById("discretionary").setAttribute("value", currentMaxMonthlySpend["discretionary"]);
     })
 }
 
