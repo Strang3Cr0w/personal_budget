@@ -27,9 +27,6 @@ expensesRouter.post('/', (req, res) => {
         expenses.push(newExpense)
     
     console.log(expenses)
-    })
+})
     
- 
-
-
 module.exports = expensesRouter;
