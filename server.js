@@ -13,6 +13,9 @@ app.use("/expenses", expensesRouter);
 const databaseRouter = require("./Routes/budgetRouter.js");
 app.use("/budget", databaseRouter);
 
+const incomeRouter = require("./Routes/incomeRouter.js")
+app.use("/income", incomeRouter)
+
 app.get("/view/woohoo.ejs", (req, res, next) =>{
     res.render("woohoo");
 });

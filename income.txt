@@ -1,0 +1,58 @@
+{
+    "income": [
+        {
+            "date": "2022-08-12",
+            "month": "August",
+            "day": "12",
+            "income": "5464"
+        },
+        {
+            "date": "2022-08-12",
+            "month": "August",
+            "day": "12",
+            "income": "5464"
+        },
+        {
+            "date": "2022-08-27",
+            "month": "August",
+            "day": "27",
+            "income": "345"
+        },
+        {
+            "date": "2022-08-27",
+            "month": "August",
+            "day": "27",
+            "income": "345"
+        },
+        {
+            "date": "2022-08-27",
+            "month": "August",
+            "day": "27",
+            "income": "3453"
+        },
+        {
+            "date": "2022-08-27",
+            "month": "August",
+            "day": "27",
+            "income": "2443"
+        },
+        {
+            "date": "2022-08-27",
+            "month": "August",
+            "day": "27",
+            "income": "2443"
+        },
+        {
+            "date": "2022-08-27",
+            "month": "August",
+            "day": "27",
+            "income": "5"
+        },
+        {
+            "date": "2022-08-24",
+            "month": "August",
+            "day": "24",
+            "income": "124"
+        }
+    ]
+}
