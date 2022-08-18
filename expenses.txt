@@ -1,0 +1,18 @@
+{
+    "expenses": [
+        {
+            "date": "2022-08-05",
+            "month": "August",
+            "day": "5",
+            "expense": "foodGroceries",
+            "total": "500"
+        },
+        {
+            "date": "2022-08-26",
+            "month": "August",
+            "day": "26",
+            "expense": "vehicleGas",
+            "total": "500"
+        }
+    ]
+}

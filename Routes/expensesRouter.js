@@ -1,7 +1,11 @@
 const express = require("express");
 const expensesRouter = express.Router();
+const fs = require("fs");
 
-const expenses = [];
+const expensesJSON = fs.readFileSync("./expenses.txt", {encoding: "utf-8", flag: "r"});
+const expenses = JSON.parse(expensesJSON);
+
+
 
 expensesRouter.get('/', (req,res) => {
     res.send(expenses)
@@ -24,7 +28,8 @@ expensesRouter.post('/', (req, res) => {
             } 
     } } 
         console.log("pushing to database")
-        expenses.push(newExpense)
+        expenses['expenses'].push(newExpense)
+        fs.writeFileSync("expenses.txt", JSON.stringify(expenses, null, 4), "utf-8");
     
     console.log(expenses)
 })
