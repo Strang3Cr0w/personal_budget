@@ -22,9 +22,10 @@ expensesRouter.post('/', (req, res) => {
             if(expenses[i].date === newExpense.date && expenses[i].expense === newExpense.expense) {
                 expenses[i].total = newExpense.total;
             } 
-    } } else{
+    } } 
+        console.log("pushing to database")
         expenses.push(newExpense)
-    }
+    
     console.log(expenses)
     })
     
