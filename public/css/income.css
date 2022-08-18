@@ -6,9 +6,9 @@
 }
 
 #wrapper{
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+    width:1200px;
 }
 
 body{
@@ -56,37 +56,75 @@ p{
     border-radius: 5px;
     padding: 10px;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
 
-.inputs{
+.dateselect{
+    margin-left: 100px;
     color: black;
     border: 25px solid #160053;
-    border-radius: 5px;
-    border-spacing: 15px;
-    width: 600px;
-    text-align: right;
-    font-size: 28px;
+    width: 400px;
+    font-size: 24px;
     padding: 10px 10px;
-    margin-left: 50px;
+    text-align: right;
+    float: left;
+
 }
 
-.inputs form input{
+.dateselect form input{
+    text-align: right;
     width: 200px;
     height: 50px;
-    font-size: 28px;
+    font-size: 24px;
+}
+
+.income{
+    float: right;
+    margin-right: 200px;
+    border: 25px solid #160053;
+    padding: 10px 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.income form input{
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    margin: 10px;
     text-align: right;
-    border: 5px solid #160053;
-    border-radius: 5px;
+}
+
+#total{
+    background: white;
+    display: flex;
+    width: 180px;
+    padding: 10px;
+    justify-content: center;
+    margin-left: 20px;
 }
 
 #submit{
-    margin-top: 5px;
-    text-align: center;
-    border: 5px solid #160053;
+    position:absolute;
+    float: right;
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    top: 600px;
+    left: 1110px;
     cursor: pointer;
+    border: 5px solid #160053;
     font-weight: bold;
     background:rgb(175, 240, 125);
+}
+
+#expenses{
+    width: 200px;
+    height:50px;
+    font-size: 22px
 }
 
 .next{
