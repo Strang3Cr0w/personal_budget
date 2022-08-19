@@ -55,6 +55,7 @@ const dataForms = (form, category, input) =>{
         let newElement = document.createElement("input");
         newElement.type = "number";
         newElement.setAttribute("id", `${input}${x}`);
+        newElement.setAttribute("value", '0');
         
         let currentElement = document.getElementById(`${form}${x}`);
         currentElement.appendChild(newElement)
@@ -97,3 +98,20 @@ dataForms("balanceTotalForm", "balanceTotal", "balanceTotalInput");
 //    End of Summary Table Code     //
 //                                  //
 //////////////////////////////////////
+
+const deleteButton = document.getElementById("delete");
+const confirmDeleteBox = document.getElementById("confirmDeleteBox");
+const cancelButton = document.getElementById("cancel");
+const areYouSure = document.getElementById("areYouSure");
+
+const openConfirmDeleteBox = () =>{
+    confirmDeleteBox.style.top = "17%";
+    console.log("hellow world");
+}
+    
+const closeConfirmDeleteBox = () =>{
+    confirmDeleteBox.style.top = "-100vh";
+}
+
+deleteButton.addEventListener("click", openConfirmDeleteBox);
+cancelButton.addEventListener("click", closeConfirmDeleteBox);

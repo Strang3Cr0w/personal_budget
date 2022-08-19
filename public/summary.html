@@ -33,6 +33,16 @@
         </nav>
     </div>
     <h1>Budget Summary</h1>
+    <p>Welcome to your budget summary! This page lists everything you inputted in the previous pages
+        into a table so you can easily see what and when you spent money. One last thing, you'll see 
+        a field to the right. Enter in your previous day total account balance. That way we can show
+        you how much money you have in total.<br><br>Another thing, if you ever want to delete your budget
+        and start over, press the delete button.
+    </p>
+    <div class="accountBalance">
+        <label for="accountBalance">Enter Your Account Balance $</label>
+        <input type="number" name="accountBalance" id="accountBalance" value="0">
+    </div>
     <table>
         <tr id="header_row">
             <th id="monthdatalist">
@@ -64,6 +74,14 @@
             <th>Balance Total</th>
         </tr>
         <tr id="row0"></tr>
+    <div>
+        <button id="delete">Delete Budget</button>
     </div>
+    <div id="confirmDeleteBox">
+        <button id="areYouSure">Are you sure?</button>
+        <span>By pressing this button you confirm that you want to delete your entire budget.</span>
+        <button id="cancel">Cancel</button>
+    </div>
+</div>
 </body>
 </html>
