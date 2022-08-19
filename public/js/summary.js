@@ -115,3 +115,110 @@ const closeConfirmDeleteBox = () =>{
 
 deleteButton.addEventListener("click", openConfirmDeleteBox);
 cancelButton.addEventListener("click", closeConfirmDeleteBox);
+
+const monthList = document.getElementById("monthList");
+
+const thirtyDays = () =>{
+    document.getElementById("day31").style.visibility = "hidden";
+    document.getElementById("mortgageRent31").style.visibility = "hidden";
+    document.getElementById("utilities31").style.visibility = "hidden";
+    document.getElementById("foodGroceries31").style.visibility = "hidden";
+    document.getElementById("vehicleGas31").style.visibility = "hidden";
+    document.getElementById("discretionary31").style.visibility = "hidden";
+    document.getElementById("income31").style.visibility = "hidden";
+    document.getElementById("balanceTotal31").style.visibility = "hidden";
+}
+
+const thirtyOneDays = () =>{
+    if(document.getElementById("day29").style.visibility === "hidden"){
+        for(let x = 29; x < 32; x++){
+            document.getElementById(`day${x}`).style.visibility = "visible";
+        }
+        for(let x = 29; x < 32; x++){
+            document.getElementById(`mortgageRent${x}`).style.visibility = "visible";
+        }
+        for(let x = 29; x < 32; x++){
+            document.getElementById(`utilities${x}`).style.visibility = "visible";
+        }
+        for(let x = 29; x < 32; x++){
+            document.getElementById(`foodGroceries${x}`).style.visibility = "visible";
+        }
+        for(let x = 29; x < 32; x++){
+            document.getElementById(`vehicleGas${x}`).style.visibility = "visible";
+        }
+        for(let x = 29; x < 32; x++){
+            document.getElementById(`discretionary${x}`).style.visibility = "visible";
+        }
+        for(let x = 29; x < 32; x++){
+            document.getElementById(`income${x}`).style.visibility = "visible";
+        }
+        for(let x = 29; x < 32; x++){
+            document.getElementById(`balanceTotal${x}`).style.visibility = "visible";
+        }
+        }else{
+            document.getElementById("day31").style.visibility = "visible";
+            document.getElementById("mortgageRent31").style.visibility = "visible";
+            document.getElementById("utilities31").style.visibility = "visible";
+            document.getElementById("foodGroceries31").style.visibility = "visible";
+            document.getElementById("vehicleGas31").style.visibility = "visible";
+            document.getElementById("discretionary31").style.visibility = "visible";
+            document.getElementById("income31").style.visibility = "visible";
+            document.getElementById("balanceTotal31").style.visibility = "visible";
+    }
+}
+
+const february = () =>{
+    for(let x = 29; x < 32; x++){
+        document.getElementById(`day${x}`).style.visibility = "hidden";
+    }
+    for(let x = 29; x < 32; x++){
+        document.getElementById(`mortgageRent${x}`).style.visibility = "hidden";
+    }
+    for(let x = 29; x < 32; x++){
+        document.getElementById(`utilities${x}`).style.visibility = "hidden";
+    }
+    for(let x = 29; x < 32; x++){
+        document.getElementById(`foodGroceries${x}`).style.visibility = "hidden";
+    }
+    for(let x = 29; x < 32; x++){
+        document.getElementById(`vehicleGas${x}`).style.visibility = "hidden";
+    }for(let x = 29; x < 32; x++){
+        document.getElementById(`discretionary${x}`).style.visibility = "hidden";
+    }
+    for(let x = 29; x < 32; x++){
+        document.getElementById(`income${x}`).style.visibility = "hidden";
+    }
+    for(let x = 29; x < 32; x++){
+        document.getElementById(`balanceTotal${x}`).style.visibility = "hidden";
+    }
+}
+
+monthList.addEventListener("input", () =>{
+    switch(monthList.value){
+        case "January": thirtyOneDays();
+        break;
+        case "February": february();
+        break;
+        case "March": thirtyOneDays();
+        break;
+        case "April": thirtyDays();
+        break;
+        case "May": thirtyOneDays();
+        break;
+        case "June": thirtyDays();
+        case "July": thirtyOneDays();
+        break;
+        case "August": thirtyOneDays();
+        break;
+        case "September": thirtyDays();
+        break;
+        case "October": thirtyOneDays();
+        break;
+        case "November": thirtyDays();
+        break;
+        case "December":thirtyOneDays();
+        break;
+        default: break;
+    }
+
+})
