@@ -36,21 +36,21 @@
             We need to be able to compare your expenses against your income in order to track how much money you're saving. Once you enter your income, you
             can go to the summary page to enter your combined starting account balance to view a full summary of your budget.
         </p>
-        <br>
         <div class="dateselect">
             <form>
-                <label for="date">Date</label> 
+                <label for="date" id="dateLabel">Date</label> 
                 <input type="date" id="date" name="date">
             </form>
         </div>
         <div class="income">
             <form>
-                <label for="income">Enter Income $</label>
-                <input type="number" id="income" name="income">
+                <label for="income" id="incomeLabel">Enter Income $</label>
+                <input type="number" id="income" name="income" value="0">
             </form>
         </div>
-        <div>
-            <input type="submit" id="submit">
+        <div class="submit">
+            <span id="saved"></span>
+            <input type="submit" id="submit"/>
         </div>
         <div class="next">
             <a href="summary.html">Now let's go see your summary!</a>

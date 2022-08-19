@@ -53,6 +53,114 @@
             "month": "August",
             "day": "24",
             "income": "124"
+        },
+        {
+            "date": "2022-08-19",
+            "month": "August",
+            "day": "19",
+            "income": "3000"
+        },
+        {
+            "date": "",
+            "month": "undefined",
+            "day": "NaN",
+            "income": "3000"
+        },
+        {
+            "date": "",
+            "month": "undefined",
+            "day": "NaN",
+            "income": "2500"
+        },
+        {
+            "date": "",
+            "month": "undefined",
+            "day": "NaN",
+            "income": "200"
+        },
+        {
+            "date": "",
+            "month": "undefined",
+            "day": "NaN",
+            "income": "3500"
+        },
+        {
+            "date": "",
+            "month": "undefined",
+            "day": "NaN",
+            "income": "3500"
+        },
+        {
+            "date": "",
+            "month": "undefined",
+            "day": "NaN",
+            "income": "2000"
+        },
+        {
+            "date": "2022-08-18",
+            "month": "August",
+            "day": "18",
+            "income": "2000"
+        },
+        {
+            "date": "2022-08-18",
+            "month": "August",
+            "day": "18",
+            "income": "0"
+        },
+        {
+            "date": "",
+            "month": "undefined",
+            "day": "NaN",
+            "income": ""
+        },
+        {
+            "date": "",
+            "month": "undefined",
+            "day": "NaN",
+            "income": "0"
+        },
+        {
+            "date": "",
+            "month": "undefined",
+            "day": "NaN",
+            "income": ""
+        },
+        {
+            "date": "",
+            "month": "undefined",
+            "day": "NaN",
+            "income": "0"
+        },
+        {
+            "date": "2022-08-18",
+            "month": "August",
+            "day": "18",
+            "income": "0"
+        },
+        {
+            "date": "2022-08-18",
+            "month": "August",
+            "day": "18",
+            "income": "0"
+        },
+        {
+            "date": "2022-08-18",
+            "month": "August",
+            "day": "18",
+            "income": "0"
+        },
+        {
+            "date": "2022-08-18",
+            "month": "August",
+            "day": "18",
+            "income": "0"
+        },
+        {
+            "date": "2022-08-18",
+            "month": "August",
+            "day": "18",
+            "income": "200"
         }
     ]
 }

@@ -5,8 +5,6 @@ const fs = require("fs");
 const expensesJSON = fs.readFileSync("./expenses.txt", {encoding: "utf-8", flag: "r"});
 const expenses = JSON.parse(expensesJSON);
 
-
-
 expensesRouter.get('/', (req,res) => {
     res.send(expenses)
 })
