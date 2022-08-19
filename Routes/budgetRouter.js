@@ -2,9 +2,6 @@ const express = require("express");
 const router = express.Router();
 const fs = require("fs");
 
-
-
-
 const maxMonthlySpendJSON = fs.readFileSync("./maxMonthlySpend.txt", {encoding: "utf-8", flag: "r"});
 const maxMonthlySpend = JSON.parse(maxMonthlySpendJSON);
 
