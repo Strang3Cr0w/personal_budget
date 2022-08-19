@@ -16,10 +16,6 @@ app.use("/budget", databaseRouter);
 const incomeRouter = require("./Routes/incomeRouter.js")
 app.use("/income", incomeRouter)
 
-app.get("/view/woohoo.ejs", (req, res, next) =>{
-    res.render("woohoo");
-});
-
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, ()=>{
