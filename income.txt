@@ -161,6 +161,12 @@
             "month": "August",
             "day": "18",
             "income": "200"
+        },
+        {
+            "date": "2022-08-22",
+            "month": "August",
+            "day": "22",
+            "income": "2000"
         }
     ]
 }

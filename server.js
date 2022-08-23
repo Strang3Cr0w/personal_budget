@@ -16,6 +16,9 @@ app.use("/budget", databaseRouter);
 const incomeRouter = require("./Routes/incomeRouter.js")
 app.use("/income", incomeRouter)
 
+const summaryRouter = require("./Routes/summaryRouter.js");
+app.use("/summary", summaryRouter);
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, ()=>{
