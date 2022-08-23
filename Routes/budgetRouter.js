@@ -26,4 +26,14 @@ router.post("/", (req, res, next) => {
     }, 2500);
 });
 
+router.delete("/delete", (req, res, next) =>{
+    maxMonthlySpend["mortgageRent"] = 0;
+    maxMonthlySpend["utilities"] = 0;
+    maxMonthlySpend["foodGroceries"] = 0;
+    maxMonthlySpend["vehicleGas"] = 0;
+    maxMonthlySpend["discretionary"] = 0;
+    fs.writeFileSync("maxMonthlySpend.txt", JSON.stringify(maxMonthlySpend, null, 4), "utf-8");
+    console.log("Budget Delete Operations Complete");
+});
+
 module.exports = router;

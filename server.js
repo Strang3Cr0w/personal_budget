@@ -7,11 +7,11 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.set("view engine", "ejs");
 
-const expensesRouter = require("./Routes/expensesRouter.js");
-app.use("/expenses", expensesRouter);
-
 const databaseRouter = require("./Routes/budgetRouter.js");
 app.use("/budget", databaseRouter);
+
+const expensesRouter = require("./Routes/expensesRouter.js");
+app.use("/expenses", expensesRouter);
 
 const incomeRouter = require("./Routes/incomeRouter.js")
 app.use("/income", incomeRouter)

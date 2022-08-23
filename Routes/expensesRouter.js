@@ -3,7 +3,7 @@ const expensesRouter = express.Router();
 const fs = require("fs");
 
 const expensesJSON = fs.readFileSync("./expenses.txt", {encoding: "utf-8", flag: "r"});
-const expenses = JSON.parse(expensesJSON);
+let expenses = JSON.parse(expensesJSON);
 
 expensesRouter.get('/', (req,res) => {
     res.send(expenses)
@@ -31,5 +31,14 @@ expensesRouter.post('/', (req, res) => {
     
     console.log(expenses)
 })
+
+expensesRouter.delete("/delete", (req, res, next) =>{
+    expenses = {
+        expenses: []
+    };
+
+    fs.writeFileSync("expenses.txt", JSON.stringify(expenses, null, 4), "utf-8");
+    console.log("Expenses Delete Operations Complete");
+});
     
 module.exports = expensesRouter;

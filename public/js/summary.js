@@ -106,7 +106,6 @@ const areYouSure = document.getElementById("areYouSure");
 
 const openConfirmDeleteBox = () =>{
     confirmDeleteBox.style.top = "17%";
-    console.log("hellow world");
 }
     
 const closeConfirmDeleteBox = () =>{
@@ -233,3 +232,19 @@ submit.addEventListener("click", () =>{
         saved.innerHTML = "";
         }, 2500);
 })
+
+const confirmDelete = document.getElementById("areYouSure");
+const everythingDeleted = document.getElementById("everythingDeleted");
+
+confirmDelete.addEventListener("click", () =>{
+    fetch("/budget/delete", { method: "DELETE"});
+    fetch("/expenses/delete", { method: "DELETE"});
+    fetch("/income/delete", { method: "DELETE"});
+    fetch("/summary/delete", { method: "DELETE"});
+    closeConfirmDeleteBox;
+    everythingDeleted.style.top = "17%";
+    setTimeout(function(){
+        window.location.href = "./index.html";
+    }, 2500);
+});
+
