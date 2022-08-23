@@ -222,3 +222,14 @@ monthList.addEventListener("input", () =>{
     }
 
 })
+
+const submit = document.getElementById("submit");
+
+submit.addEventListener("click", () =>{
+    const accountBalance = document.getElementById("accountBalance").value;
+    fetch(`/summary?accountBalance=${accountBalance}`, { method: "POST"});
+    document.getElementById("saved").innerHTML = "Saved!";
+        setTimeout(function(){
+        saved.innerHTML = "";
+        }, 2500);
+})
