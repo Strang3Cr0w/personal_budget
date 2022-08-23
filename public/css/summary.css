@@ -162,3 +162,21 @@ table input{
     font-size: 26px;
     font-weight: bold;
 }
+
+#everythingDeleted{
+    width: 30%;
+    height: 30%;
+    background:rgb(175, 240, 125);
+    border: 10px solid red;
+    border-radius: 5px;
+    position: absolute;
+    top: -100vh;
+    left: 40%;
+    padding: 5%;
+    text-align: center;
+    transition: 1s;
+}
+
+#everythingDeleted span{
+    font-size: 36px;
+}

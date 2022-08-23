@@ -1,7 +1,7 @@
 {
-    "mortgageRent": "1200",
-    "utilities": "500",
-    "foodGroceries": "300",
-    "vehicleGas": "200",
-    "discretionary": "100"
+    "mortgageRent": 0,
+    "utilities": 0,
+    "foodGroceries": 0,
+    "vehicleGas": 0,
+    "discretionary": 0
 }

@@ -3,7 +3,7 @@ const incomeRouter = express.Router();
 const fs = require("fs");
 
 const incomeJSON = fs.readFileSync("./income.txt", {encoding: "utf-8", flag: "r"});
-const income = JSON.parse(incomeJSON);
+let income = JSON.parse(incomeJSON);
 
 incomeRouter.get('/', (req,res) => {
     res.send(income)
@@ -35,5 +35,13 @@ incomeRouter.post('/', (req, res, next) => {
     }
     
 })
+
+incomeRouter.delete("/delete", (req, res, next) =>{
+    income = {
+        income: []
+    };
+    fs.writeFileSync("income.txt", JSON.stringify(income, null, 4), "utf-8");
+    console.log("Income Delete Operations Complete");
+});
 
 module.exports = incomeRouter;
